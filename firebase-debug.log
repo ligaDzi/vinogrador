@@ -1,0 +1,81 @@
+[debug] [2022-02-11T15:15:23.764Z] ----------------------------------------------------------------------
+[debug] [2022-02-11T15:15:23.766Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\liDzi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-02-11T15:15:23.767Z] CLI Version:   10.2.0
+[debug] [2022-02-11T15:15:23.767Z] Platform:      win32
+[debug] [2022-02-11T15:15:23.767Z] Node Version:  v16.13.0
+[debug] [2022-02-11T15:15:23.768Z] Time:          Fri Feb 11 2022 18:15:23 GMT+0300 (Москва, стандартное время)
+[debug] [2022-02-11T15:15:23.769Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-11T15:15:23.845Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-11T15:15:23.846Z] > authorizing via signed-in user (asergy34@gmail.com)
+[debug] [2022-02-11T15:15:23.846Z] [iam] checking project vinogradar-7cfc3 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-02-11T15:15:23.848Z] > refreshing access token with scopes: []
+[debug] [2022-02-11T15:15:23.848Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-11T15:15:24.031Z] <<< HTTP RESPONSE 400 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Fri, 11 Feb 2022 15:15:23 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-11T15:15:24.033Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/vinogradar-7cfc3:testIamPermissions [none]
+[debug] [2022-02-11T15:15:24.033Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/vinogradar-7cfc3:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-02-11T15:15:25.018Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/vinogradar-7cfc3:testIamPermissions 401
+[debug] [2022-02-11T15:15:25.018Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/vinogradar-7cfc3:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2022-02-11T15:15:25.019Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-02-11T15:15:25.020Z] > refreshing access token with scopes: []
+[debug] [2022-02-11T15:15:25.021Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-11T15:15:25.167Z] <<< HTTP RESPONSE 400 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Fri, 11 Feb 2022 15:15:24 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-11T15:15:25.170Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vinogradar-7cfc3 [none]
+[debug] [2022-02-11T15:15:25.323Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vinogradar-7cfc3 401
+[debug] [2022-02-11T15:15:25.323Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vinogradar-7cfc3 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2022-02-11T15:15:25.323Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-02-11T15:15:25.326Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (C:\Users\liDzi\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at RetryOperation._fn (C:\Users\liDzi\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:283:39)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project vinogradar-7cfc3. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-02-11T15:16:43.474Z] ----------------------------------------------------------------------
+[debug] [2022-02-11T15:16:43.477Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\liDzi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-02-11T15:16:43.477Z] CLI Version:   10.2.0
+[debug] [2022-02-11T15:16:43.477Z] Platform:      win32
+[debug] [2022-02-11T15:16:43.477Z] Node Version:  v16.13.0
+[debug] [2022-02-11T15:16:43.479Z] Time:          Fri Feb 11 2022 18:16:43 GMT+0300 (Москва, стандартное время)
+[debug] [2022-02-11T15:16:43.479Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-11T15:16:43.572Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-11T15:16:43.572Z] > authorizing via signed-in user (asergy34@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Programming\MyProgram\Web\BlogiVinograd\new
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-02-11T15:18:09.532Z] Using project from CLI flag: vinogradar-7cfc3
+[debug] [2022-02-11T15:18:09.534Z] > refreshing access token with scopes: []
+[debug] [2022-02-11T15:18:09.534Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-11T15:18:09.730Z] <<< HTTP RESPONSE 400 {"date":"Fri, 11 Feb 2022 15:18:09 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-11T15:18:09.735Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vinogradar-7cfc3 [none]
+[debug] [2022-02-11T15:18:09.899Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vinogradar-7cfc3 401
+[debug] [2022-02-11T15:18:09.900Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vinogradar-7cfc3 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2022-02-11T15:18:09.901Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-02-11T15:18:09.904Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (C:\Users\liDzi\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at RetryOperation._fn (C:\Users\liDzi\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:283:39)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project vinogradar-7cfc3. Please make sure the project exists and your account has permission to access it.
